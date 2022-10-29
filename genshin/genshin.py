@@ -186,7 +186,7 @@ class Genshin(commands.Cog):
 
     @commands.command()
     @commands.has_permissions(manage_messages=True)
-    async def setstatuschan(self, ctx, *, channel: discord.TextChannel):
+    async def channel(self, ctx, *, channel: discord.TextChannel):
         """Set status channel."""
         message = await self.bot.get_channel(channel.id).send(
             embed=discord.Embed(
